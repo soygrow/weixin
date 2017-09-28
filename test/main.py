@@ -2,9 +2,13 @@
 # filename: main.py
 import web
 from handle import Handle
+from index import Index
+from static import Static
 
 urls = (
+    '/', 'Index',
     '/wx', 'Handle',
+    '(.*/..{1,3})', 'Static',
 )
 
 if __name__ == '__main__':
