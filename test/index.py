@@ -2,10 +2,11 @@
 # filename: handle.py
 
 import web
+import model
 
 class Index(object):
     def GET(self):
 	print "##################### index"
-	render = web.template.render('html/')
+	render = model.('html/')
 	return render.index()
 
