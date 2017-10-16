@@ -2,10 +2,8 @@
 # filename: main.py
 import web
 from handle import Handle
-from index import Index
 
 urls = (
-    '/', 'Index',
     '/wx', 'Handle',
 )
 
